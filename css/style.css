@@ -197,6 +197,20 @@ a:not([href]):not([class]):hover {
 	text-decoration: none;
 }
 
+.imagen-link {
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	/* Suaviza el efecto */
+}
+
+a:hover .imagen-link {
+	transform: scale(1.1);
+	/* Zoom al pasar el mouse */
+	opacity: 0.8;
+	color: orange;
+	/* Ligera transparencia */
+	/* Puedes añadir bordes o sombras: box-shadow: 0 4px 8px rgba(0,0,0,0.2); */
+}
+
 pre,
 code,
 kbd,
