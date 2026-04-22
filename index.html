@@ -79,9 +79,9 @@
 							</div>
 							<div class="d-inline-block  border-bottom border-light py-3 px-4">
 								<h3 class="text-white font-weight-lighter">
-									<p>And since then I am because you are,<br>
-										and since then you are, I am and we are,<br>
-										and for love I will be, you will be, we will be.</p>
+									<p>Y desde entonces soy porque tú eres,<br>
+										y desde entonces eres, soy y somos,<br>
+										y por amor seré, serás, seremos.</p>
 								</h3>
 							</div>
 							<!--  <button type="button" class="btn-play mx-auto" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
@@ -231,9 +231,9 @@
 			<hr>
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center">
-					<h4 class="mb-3"><img class="img-fluid mb-4" src="img/mapa.png" alt=""> Directions to the event</h4>
-					<p class="m-0"><a href="#">Map</a></p>
-					<p class="m-0"><a href="#">Map</a></p>
+					<h4 class="mb-3"><img class="img-fluid mb-4" src="img/mapa.png" alt=""> Instrucciones para llegar al evento</h4>
+					<p class="m-0"><a href="#">Mapa</a></p>
+					<p class="m-0"><a href="#">Mapa</a></p>
 
 				</div>
 			</div>
@@ -249,16 +249,15 @@
 		<hr>
 		<div class="container py-5">
 			<div class="section-title position-relative text-center">
-				<h1 class="font-secondary display-4">Information of interest</h1>
+				<h1 class="font-secondary display-4">Información de interés</h1>
 				<i class="far fa-heart text-dark-light"></i>
 			</div>
 
 			<div class="row">
 				<div class="col-md-6 border-right border-primary">
 					<div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
-						<h4 class="mb-3">01. When you are there
-						</h4>
-						<p class="text-uppercase mb-2">Fun things to do in the area</p>
+						<h4 class="mb-3">01.Cuando estés allí</h4>
+						<p class="text-uppercase mb-2">Cosas divertidas que hacer en la zona</p>
 						<p><a href="https://spanish.visitkorea.or.kr/svc/main/index.do">
 								<img class="imagen-link" style="width:20%; height: auto;" src="img/site_logo_turism_Korea.png"></a>
 						</p>
@@ -266,7 +265,7 @@
 				</div>
 				<div class="col-md-6">
 					<div class="text-center text-md-left ml-md-3">
-						<h4 class="mb-3">02. Where to stay</h4>
+						<h4 class="mb-3">02. Dónde alojarse</h4>
 						<p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.
 						</p>
 						<p> <a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=140676">Link</a>
@@ -294,76 +293,50 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="text-center">
-
-						<form id="contactoForm">
-
-							<fieldset class="form-row input-group-text">
-								<div>
-									<label class="radio-option">
-										<input type="radio" name="asistencia" value="yes" required=""> Yes
-									</label>
-									<label class="radio-option">
-										<input type="radio" name="asistencia" value="no"> No podré asistir
-									</label>
+					
+						<form action="mailto:tyrperro@gmail.com" method="post" enctype="text/plain">
+						
+							<div class="form-row">
+								<div class="form-group col-sm-6">
+									<input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Name" />
 								</div>
+								<div class="form-group col-sm-6">
+									<input type="email" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Email" />
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-sm-6">
+									<label>Number of Guest</label>
 
-								<label for="nombre">Your name:</label>
-								<input id="nombre" name="nombre" type="text" class="form-control border-0" placeholder="Your Name" />
+									<select name="guest" class="form-control bg-secondary border-0" style="height: 52px;">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									</select>
+								</div>
+								<div class="form-group col-sm-6">
+									<label for="nutritional">Nutritional needs:</label>
 
+									<select name="nutritional" class="form-control bg-secondary border-0" style="height: 52px;">
 
-								<div>
-									<select name="nutritional" class="border-0" class="" class="form-control custom-select">
-										<option value="nutritionalguest" disabled selected>Nutritional needs</option>
-										<option value="noguest">No</option>
-										<option value="Celiacguest">Celiac patients</option>
-										<option value="Veganguest">Vegan</option>
+										<option value="Celiac">Celiac patients</option>
+										<option value="Vegan" selected>Vegan</option>
 										<option value="Vegetarian">Vegetarian</option>
-										<option value="Lactoseguest">Lactose intolerant</option>
-										<option value="Eggguest">Egg intolerant</option>
-										<option value="Nutguest">Nut intolerant</option>
 									</select>
 								</div>
-							</fieldset>
-
-							<fieldset class="form-row input-group-text">
-								<div>
-									<label for="nguests">Nº of acompañantes</label>
-									<select name="nguests" id="nguests" class="border-0" class="" class="form-control custom-select">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
-								</div>
-							</fieldset>
-							<fieldset class="form-row input-group-text">
-								<p>Guest's Names:</p>
-								<textarea id="guestname" name="guestname" type="text" class="form-control" placeholder="Guest Name">
-								</textarea>
-
-							</fieldset>
-							<div class="form-row input-group-text">
-								<p>Send us a message or other information</p>
-								<textarea name="mensaje" class="form-control border-0" rows="5" placeholder="Message"></textarea>
 							</div>
+							<div class="form-group col-sm-6">
+								<label for="nutritional">Nutritional needs:</label>
 
-							<div>
-								<button id="btnEnviar" class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Send</button>
+								<select name="nutritional" class="form-control bg-secondary border-0" style="height: 52px;">
 
+									<option value="Celiac">Celiac patients</option>
+									<option value="Vegan" selected>Vegan</option>
+									<option value="Vegetarian">Vegetarian</option>
+								</select>
 							</div>
-							<!-- Contenedor para mensajes de éxito/error -->
-							<div id="respuesta" style="margin-top: 10px;"></div>
-							<!-- Contenedor para mensajes de éxito/error -->
-							<div id="respuesta" style="margin-top: 10px;"></div>
-						</form>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--Celiacos
+							<!--Celiacos
 Veganos
 Vegetarianos
 Intolerantes a la lactosa
@@ -377,6 +350,18 @@ Lactose intolerant
 Egg intolerant
 Nut intolerant
 -->
+							<div class="form-group">
+								<textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Message"></textarea>
+							</div>
+							<div>
+								<button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- RSVP End -->
 
 
@@ -422,47 +407,6 @@ Nut intolerant
 
 	<!-- Template Javascript -->
 	<script src="js/main.js"></script>
-
-
-	<script>
-		const formulario = document.getElementById('contactoForm');
-		const respuestaVisual = document.getElementById('respuesta');
-		const boton = document.getElementById('btnEnviar');
-
-		formulario.addEventListener('submit', function(e) {
-			e.preventDefault(); // Evita que la página se recargue
-
-			boton.disabled = true;
-			boton.innerText = "Enviando...";
-			respuestaVisual.innerText = "Procesando tu mensaje...";
-
-			// Creamos los datos para enviar
-			const datos = new FormData(formulario);
-			const url = 'https://script.google.com/macros/s/AKfycby9FrSSqIT06Mu-659NnvH6e17YXQ36WWrOzv6lnfHpgIlI5fkWVzyXaDU2OsSgW3L9yw/exec'; // <--- PEGA TU URL AQUÍ
-
-			fetch(url, {
-					method: 'POST',
-					body: datos,
-					mode: 'no-cors' // Importante para evitar bloqueos de Google
-				})
-				.then(() => {
-					// Con 'no-cors' no podemos leer la respuesta del servidor, 
-					// así que asumimos éxito si la petición se completa.
-					respuestaVisual.style.color = "green";
-					respuestaVisual.innerText = "¡Mensaje enviado con éxito!";
-					formulario.reset(); // Limpia los campos
-				})
-				.catch(error => {
-					respuestaVisual.style.color = "red";
-					respuestaVisual.innerText = "Error al enviar: " + error.message;
-				})
-				.finally(() => {
-					boton.disabled = false;
-					boton.innerText = "Enviar Mensaje";
-				});
-		});
-
-	</script>
 
 </body>
 
