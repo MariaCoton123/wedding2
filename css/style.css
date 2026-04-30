@@ -10527,6 +10527,10 @@ button.bg-dark:focus {
 	font-weight: bolder !important;
 }
 
+.font-monospace {
+	font-family: monospace !important;
+}
+
 .font-italic {
 	font-style: italic !important;
 }
